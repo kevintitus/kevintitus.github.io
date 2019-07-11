@@ -458,6 +458,12 @@ console.log('token ERROR - err: ', err);
 } 
 ); 
 }); 
+    
+window.onerror = function myErrorHandler(err, url, line) { 
+   alert(err); 
+   return false; 
+}
+    
 </script> 
 </body> 
 </html>
